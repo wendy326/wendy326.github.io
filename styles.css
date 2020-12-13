@@ -1,7 +1,131 @@
-.placeholder {
-    background-color: bisque;
+/* Master Styles */
+body {
+    /* font-family: "Lato", sans-serif; //Lato is first choice, sans-serif is backup*/
+    margin: 0px;
 }
 
-.lala {
-    background-color: cadetblue;
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
 }
+
+/* Nav Styles */
+.navwrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+}
+
+.leftnav {
+    display: flex;
+}
+
+.navwrapper > .leftnav > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.navlinkwrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navlinkwrapper a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navlinkwrapper:hover {
+    border-bottom: 1px solid cornflowerblue;
+}
+
+.navlinkwrapper a:hover {
+    color: cornflowerblue;
+}
+
+.activenavlink {
+    border-bottom: 1px solid cornflowerblue;
+}
+
+.activenavlink a {
+    color: cornflowerblue !important;
+}
+
+/* Portfolio Styles */
+
+.portfoliowrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolioitemwrapper {
+    position: relative;
+}
+
+.portfoliobkg {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgtextwrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logowrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.imgtextwrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.imgtextwrapper:hover .subtitle {
+    font-weight: 600;
+    color:cornsilk;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* About page */
+.twocolwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profilepicwrapper img{
+    width: 80%;
+    padding-left: 40px;
+}
+
+.profilecontentwrapper {
+    padding: 30px;
+}
+
+.profilecontentwrapper h1 {
+    color:cornflowerblue;
+}
+
+/*fonts.google.com 1:33:18
+click the + button and use the embed code
+paste it into the beginnings of each page above the
+content*/

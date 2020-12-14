@@ -2,6 +2,7 @@
 body {
     /* font-family: "Lato", sans-serif; //Lato is first choice, sans-serif is backup*/
     margin: 0px;
+    background-color:#202020;
 }
 
 .container {
@@ -33,25 +34,29 @@ body {
 }
 
 .navlinkwrapper a {
-    color:black;
+    color:cornsilk;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 .navlinkwrapper:hover {
-    border-bottom: 1px solid cornflowerblue;
+    border-bottom: 1px solid white;
 }
 
 .navlinkwrapper a:hover {
-    color: cornflowerblue;
+    color: white;
 }
 
 .activenavlink {
-    border-bottom: 1px solid cornflowerblue;
+    border-bottom: 1px solid #FFDF6C;
 }
 
 .activenavlink a {
-    color: cornflowerblue !important;
+    color: #FFDF6C !important;
+}
+
+.name {
+    color: #707070
 }
 
 /* Portfolio Styles */
@@ -103,7 +108,7 @@ body {
 
 .img-darken {
     transition: 1s;
-    filter: brightness(10%);
+    filter: brightness(30%);
 }
 
 /* About page */
@@ -122,10 +127,25 @@ body {
 }
 
 .profilecontentwrapper h1 {
-    color:cornflowerblue;
+    color:#FFDF6C;
+}
+
+.profilecontentwrapper p {
+    color:cornsilk;
 }
 
 /*fonts.google.com 1:33:18
 click the + button and use the embed code
 paste it into the beginnings of each page above the
 content*/
+
+/* Art page */
+
+.imgtextwrapper .transplogowrapper {
+    transition: .5s;
+    filter: opacity(0%);
+}
+
+.imgtextwrapper:hover .transplogowrapper {
+    filter: opacity(100%) !important;
+}

@@ -107,6 +107,17 @@ body {
     color:cornsilk;
 }
 
+.imgtextwrapper .subtitle a {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.imgtextwrapper:hover .subtitle a {
+    font-weight: 600;
+    color:cornsilk;
+}
+
 .img-darken {
     transition: 1s;
     filter: brightness(30%);

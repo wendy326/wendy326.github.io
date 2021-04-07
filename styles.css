@@ -1,7 +1,7 @@
 /* Master Styles */
 /* color scheme: blackish:#202020, dark gray:#3F3F3F, gray:#707070, yellow:#FFDF6C, white:#FFFFFF, cornsilk */
 body {
-    /* font-family: "Lato", sans-serif; //Lato is first choice, sans-serif is backup*/
+    font-family: 'Montserrat', sans-serif; /* Lato is first choice, sans-serif is backup*/
     margin: 0px;
     background-color:#202020;
 }
@@ -146,11 +146,6 @@ body {
     color:cornsilk;
 }
 
-/*fonts.google.com 1:33:18
-click the + button and use the embed code
-paste it into the beginnings of each page above the
-content*/
-
 /* Art page */
 
 .imgtextwrapper .transplogowrapper {
@@ -164,10 +159,10 @@ content*/
 
 /* Food page */
 
-.foodwrapper {
+/*.foodwrapper {
     display: grid;
     grid-template-columns: 1fr;
-}
+}*/
 
 .fooditemwrapper {
     position: relative;
@@ -182,18 +177,43 @@ content*/
     filter: opacity(50%);
 }
 
+/*
 .recipelink a {
     color: #FFDF6C;
     text-transform: uppercase;
     font-weight: 500;
-    margin-left: 500px;
+    /*margin-left: 500px;*//*
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
     /* position: absolute;
     top: 70;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 375%; */
-    
+
+
+.imgtextwrapper .recipelink {
+    transition: 1s;
+    color: #FFDF6C;
+    text-transform: uppercase;
+    width:auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgtextwrapper .recipelink a {
+    color: #FFDF6C;
+    transition: 1s;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.imgtextwrapper:hover .recipelink a {
+    color:ivory;
 }
 
 .foodlogo {
